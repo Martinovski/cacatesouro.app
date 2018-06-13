@@ -1,0 +1,86 @@
+html {
+    background-color: #d6d6d6;
+}
+
+#teste {
+    background-color: #d5d5d5;
+}
+
+#rpp {
+    padding: 0px 10px;
+}
+
+#r {
+    height: 350px;
+    /*width: 50%;*/
+    float: left;
+}
+
+#regras {
+    background-color: rgba(0, 0, 255, 0.5);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#regras1 {
+    font-size: 18px;
+    height: 295px;
+    color: wheat;
+    overflow: scroll;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    opacity: 1;
+}
+
+
+/*
+#pp {
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+#pistasfaltam {
+    height: 190px;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 7px;
+    font-weight: 900;
+}
+
+#pontos {
+    height: 190px;
+    background-color: rgba(0, 255, 0, 0.6);
+    padding: 7px;
+}
+*/
+
+#button {
+    height: 100%;
+    width: 100%;
+    padding-top: 430px;
+}
+
+button {
+    background-color: rgba(127, 255, 127, 1);
+    color: black;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.h1 {
+    text-shadow: 2px 2px wheat;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}

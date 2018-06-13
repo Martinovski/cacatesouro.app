@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="./js/pessoas.js"></script>
+    <script type="text/javascript" src="./js/random.js"></script>
+    <script type="text/javascript" src="js/cadastro.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+    <!--<script type="text/javascript" src="js/erro.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+
+    <title>Fetch Example</title>
+    <!--
+    <style type="text/css">
+            .response {
+            background: #eee;
+            font-size: 18px;
+            min-height: 200px;
+            max-height: 400px;
+            padding: 25px;
+            text-align: center;
+        }*/
+    </style>
+-->
+</head>
+
+<body>
+    <center>
+        <fieldset>
+            <h1> Cadastro </h1>
+
+            <div id="aliamento" class="container py-4">
+                <form class="form" action="jogo.html">
+                    <div>
+                        <label>Nome completo:</label>
+                        <input type="text" name="nome" id="nome" list="nomes" class="escrever" required="required">
+                        <datalist id="nomes">
+						</datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <span>O que você veio fazer:</span>
+                        <select name="escola_e_matricula" id="tipo">
+                    	    <option value="null" id="null" selected></option>
+                        	<option value="alunos" id="alunos">Aluno(a)</option>
+                        	<option value="visitantes" id="visitantes">Visitante</option>
+                    	</select>
+                    </div>
+                    <br>
+                    <div id="matricula">
+                        <label>Matricula:</label>
+                        <input type="text" name="matricula" list="matriculas" class="escrever" value="FC">
+                        <datalist id="matriculas">
+    					</datalist>
+                    </div>
+                    <br>
+                    <div id="escola">
+                        <label>Escola:</label>
+                        <input type="text" name="escola" list="escolas" class="escrever">
+                        <datalist id="escolas">
+    					</datalist>
+                    </div>
+                    <br>
+                    <!--
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input name="email" type="email" class="escrever" id="email" onblur="checarEmail();" required="required">
+                        <datalist id="email">
+                        </datalist>
+                    </div>-->
+                    <br>
+
+                    <div>
+                        <div>
+                            <center>
+                                <br>
+                                <button type="submit" id="entra" onclick="postData()">Entra</button>
+                                <!--
+                                <button onclick="myFunction()">ERRO</button>
+                                -->
+                            </center>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </fieldset>
+    </center>
+
+    <script type="text/javascript" src="js/api.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!--
+
+	-->
+</body>
+
+</html>

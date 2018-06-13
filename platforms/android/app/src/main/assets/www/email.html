@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="./js/pessoas.js"></script>
+    <script type="text/javascript" src="js/cadastro.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+    <!--<script type="text/javascript" src="js/erro.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <center>
+        <fieldset>
+            <h1> Login </h1>
+
+            <div id="aliamento" class="container py-4">
+                <form class="form" action="cadastro.html">
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input name="email" type="email" class="escrever" id="email" onblur="checarEmail();" required="required">
+                        <datalist>
+                    </datalist>
+                    </div>
+                    <br>
+
+                    <div>
+                        <div>
+                            <center>
+                                <br>
+                                <button type="submit" id="entra" onclick="postData()">Jogar</button>
+                            </center>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </fieldset>
+    </center>
+
+</body>
+
+</html>
