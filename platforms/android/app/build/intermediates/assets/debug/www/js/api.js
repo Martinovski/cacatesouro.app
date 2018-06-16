@@ -6,11 +6,10 @@ function postData() {
         nome: document.querySelector('#nome').value,
         tipo: document.querySelector('#tipo').value,
         matricula: document.querySelector('#matricula').value,
-        escola: document.querySelector('#escola'.value)
+        escola: document.querySelector('#escola').value,
+        email: document.querySelector('#email').value
     }
-    if (payload.matricula == null) {
-        matricula = guid();
-    }
+
     var headers = new Headers()
     headers.append('Content-Type', 'application/json')
     var init = {
@@ -25,6 +24,7 @@ function postData() {
             Pessoa.tipo = resp.tipo;
             Pessoa.matricula = resp.matricula;
             Pessoa.escola = resp.escola;
+            Pessoa.email = resp.email;
             return resp.json(window.open('jogo.html'))
         })
 

@@ -4,6 +4,7 @@ var Pessoa = {
     "tipo": "",
     "matricula": "",
     "escola": "",
+    "email": "",
     "get": function() {
 
     },

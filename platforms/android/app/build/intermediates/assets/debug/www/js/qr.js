@@ -2,14 +2,14 @@ document.addEventListener('deviceready', onDeviceReady, false)
 
 function onDeviceReady() {
     try {
-        document.getElementById('qr_btn').onclick = function() {
+        document.getElementById('qr_btn1').onclick = function() {
             cordova.plugins.barcodeScanner.scan(
                 function(result) {
-                    $('.modal-box-conteudo').html(result.text)
-                        // var getData = getData()
-                        // $('#pontos').html(getData[pontos])
-                        // $('#local').html(getData[localizacao])
-                        // $('#pistasfaltam').html(getData[numero])
+                    $('.modal-box-conteudo').html(result.text);
+                    // var getData = getData()
+                    // $('#pontos').html(getData[pontos])
+                    // $('#local').html(getData[localizacao])
+                    // $('#pistasfaltam').html(getData[numero])
                 },
                 function(error) {}
             )
@@ -18,7 +18,7 @@ function onDeviceReady() {
         console.log(err);
     }
     try {
-        document.getElementById('qr_btn1').onclick = function() {
+        document.getElementById('qr_btn2').onclick = function() {
             cordova.plugins.barcodeScanner.scan(
                 function(result) {
                     //var data = getData()
@@ -31,7 +31,7 @@ function onDeviceReady() {
             )
         }
     } catch (erro) {
-        console.log(err);
+        console.log(erro);
     }
 }
 

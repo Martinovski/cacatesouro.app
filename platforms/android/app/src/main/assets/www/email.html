@@ -19,26 +19,23 @@
         <fieldset>
             <h1> Login </h1>
 
-            <div id="aliamento" class="container py-4">
-                <form class="form" action="cadastro.html">
-                    <div>
-                        <label for="email">E-mail: </label>
-                        <input name="email" type="email" class="escrever" id="email" onblur="checarEmail();" required="required">
-                        <datalist>
+            <div id="aliamento" class="container py-4 form">
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input name="email" type="email" class="escrever" id="email" onblur="checarEmail();" required="required">
+                    <datalist>
                     </datalist>
-                    </div>
-                    <br>
+                </div>
+                <br>
 
+                <div>
                     <div>
-                        <div>
-                            <center>
-                                <br>
-                                <button type="submit" id="entra" onclick="postData()">Jogar</button>
-                            </center>
-                        </div>
+                        <center>
+                            <br>
+                            <button id="entra" onclick="emailData()">Jogar</button>
+                        </center>
                     </div>
-
-                </form>
+                </div>
             </div>
         </fieldset>
     </center>
