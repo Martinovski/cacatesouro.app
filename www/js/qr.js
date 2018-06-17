@@ -1,5 +1,5 @@
 document.addEventListener('deviceready', onDeviceReady, false)
-
+    //escanear tela inicial
 function onDeviceReady() {
     try {
         document.getElementById('qr_btn1').onclick = function() {
@@ -17,6 +17,7 @@ function onDeviceReady() {
     } catch (err) {
         console.log(err);
     }
+    //escanear tela jogo
     try {
         document.getElementById('qr_btn2').onclick = function() {
             cordova.plugins.barcodeScanner.scan(

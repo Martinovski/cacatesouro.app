@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    // perfil tipo
+    //perfil tipo
+    //show exposição
+    //hide ocultar
     $('#tipo').on('change', function() {
         //alert(this.value);
         if (this.value == 'alunos') {

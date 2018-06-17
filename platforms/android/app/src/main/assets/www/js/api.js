@@ -1,5 +1,6 @@
+//postar
 function postData() {
-
+    //
     var url = 'https://floating-forest-87711.herokuapp.com/pessoas.json'
 
     var payload = {
@@ -30,7 +31,7 @@ function postData() {
 
 
 }
-
+//obter
 function getData() {
 
     var url = "https://floating-forest-87711.herokuapp.com/pistas.json";
