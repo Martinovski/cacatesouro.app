@@ -1,6 +1,7 @@
+// requisição
 $(document).ready(function() {
     $('#qr_btn').on('click', function() {
-        // requisicao
+        // requisição post e get
         // xhttp.open("GET", "demo_get.asp", true)
         // xhttp.send()
         var xhttp = new XMLHttpRequest()

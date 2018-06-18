@@ -1,16 +1,16 @@
 //postar
 function postData() {
-    //
+
     var url = 'https://floating-forest-87711.herokuapp.com/pessoas.json'
 
     var payload = {
-        nome: document.querySelector('#nome').value,
-        tipo: document.querySelector('#tipo').value,
-        matricula: document.querySelector('#matricula').value,
-        escola: document.querySelector('#escola').value,
-        email: document.querySelector('#email').value
-    }
-
+            nome: document.querySelector('#nome').value,
+            tipo: document.querySelector('#tipo').value,
+            matricula: document.querySelector('#matricula').value,
+            escola: document.querySelector('#escola').value,
+            email: document.querySelector('#email').value
+        }
+        //vai retornar uma requisição
     var headers = new Headers()
     headers.append('Content-Type', 'application/json')
     var init = {
@@ -20,13 +20,17 @@ function postData() {
     }
     fetch(url, init)
         .then(resp => {
-            Pessoa.id = resp.id;
-            Pessoa.nome = resp.nome;
-            Pessoa.tipo = resp.tipo;
-            Pessoa.matricula = resp.matricula;
-            Pessoa.escola = resp.escola;
-            Pessoa.email = resp.email;
-            return resp.json(window.open('jogo.html'))
+            //Pessoa.id = resp.id;
+            //Pessoa.nome = resp.nome;
+            //Pessoa.tipo = resp.tipo;
+            //Pessoa.matricula = resp.matricula;
+            //Pessoa.escola = resp.escola;
+            //Pessoa.email = resp.email;
+            if (resp.length > 0) {
+                return resp.json(window.open('jogo.html'))
+            } else {
+                return resp.json(window.open('cadastro.html'))
+            }
         })
 
 

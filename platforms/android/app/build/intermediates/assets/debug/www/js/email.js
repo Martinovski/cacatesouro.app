@@ -1,3 +1,4 @@
+//validação do email html
 function verifica() {
     if (document.forms[0].email.value.length == 0) {
         alert('Por favor, informe o seu EMAIL.');
@@ -6,7 +7,7 @@ function verifica() {
     }
     return true;
 }
-
+//validação do email html
 function checarEmail() {
     if (document.querySelector('#email').value == "" ||
         document.querySelector('#email').value.indexOf('@') == -1 ||
@@ -15,7 +16,8 @@ function checarEmail() {
         return false;
     }
 }
-
+//Verificar e implementar forma de validar que o usuário ja esteve 
+//presente na católica, afim de evitar duplicação de informações.
 function emailData() {
     var url = "https://floating-forest-87711.herokuapp.com/pessoas.json?email=" + document.querySelector('#email').value;
 
