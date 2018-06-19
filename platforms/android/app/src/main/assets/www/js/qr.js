@@ -1,5 +1,6 @@
+//escanear tela inicial
 document.addEventListener('deviceready', onDeviceReady, false)
-    //escanear tela inicial
+
 function onDeviceReady() {
     try {
         document.getElementById('qr_btn1').onclick = function() {

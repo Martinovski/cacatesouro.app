@@ -20,17 +20,13 @@ function postData() {
     }
     fetch(url, init)
         .then(resp => {
-            //Pessoa.id = resp.id;
-            //Pessoa.nome = resp.nome;
-            //Pessoa.tipo = resp.tipo;
-            //Pessoa.matricula = resp.matricula;
-            //Pessoa.escola = resp.escola;
-            //Pessoa.email = resp.email;
-            if (resp.length > 0) {
-                return resp.json(window.open('jogo.html'))
-            } else {
-                return resp.json(window.open('cadastro.html'))
-            }
+            Pessoa.id = resp.id;
+            Pessoa.nome = resp.nome;
+            Pessoa.tipo = resp.tipo;
+            Pessoa.matricula = resp.matricula;
+            Pessoa.escola = resp.escola;
+            Pessoa.email = resp.email;
+            return resp.json(window.open('jogo.html'))
         })
 
 
