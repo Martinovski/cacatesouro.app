@@ -5,18 +5,18 @@ $(document).ready(function() {
     $('#tipo').on('change', function() {
         //alert(this.value);
         if (this.value == 'alunos') {
-            $('#matricula').show();
-            $('#escola').hide();
+            $('#matricula2').show();
+            $('#escola2').hide();
         } else if (this.value == 'visitantes') {
-            $('#escola').show();
-            $('#matricula').hide();
+            $('#escola2').show();
+            $('#matricula2').hide();
         } else if (this.value == 'null') {
-            $('#escola').hide();
-            $('#matricula').hide();
+            $('#escola2').hide();
+            $('#matricula2').hide();
         }
     });
-    $('#escola').hide();
-    $('#matricula').hide();
+    $('#escola2').hide();
+    $('#matricula2').hide();
 });
 
 function myFunction() {

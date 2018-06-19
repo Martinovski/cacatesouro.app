@@ -1,6 +1,7 @@
 //validação do email html
 function verifica() {
-    if (document.querySelector('#email').value.length == 0) {
+    if ( //document.querySelector('#email').value.length == 0) {
+        document.forms[0].email.value.length == 0) {
         alert('Por favor, informe o seu EMAIL.');
         document.frmEnvia.email.focus();
         return false;
@@ -9,9 +10,10 @@ function verifica() {
 }
 //validação do email html
 function checarEmail() {
-    if (document.querySelector('#email').value == "" ||
-        document.querySelector('#email').value.indexOf('@') == -1 ||
-        document.querySelector('#email').value.indexOf('.') == -1) {
+    if ( //document.querySelector('#email').value == "" ||      document.querySelector('#email').value.indexOf('@') == -1 ||        document.querySelector('#email').value.indexOf('.') == -1) {
+        document.forms[0].email.value == "" ||
+        document.forms[0].email.value.indexOf('@') == -1 ||
+        document.forms[0].email.value.indexOf('.') == -1) {
         alert("Por favor, informe um E-MAIL válido!");
         return false;
     }
@@ -35,13 +37,6 @@ function emailData() {
         .then(resp => {
             alert(init);
             return resp.json();
-            //console.log(JSON.stringify(Pessoa));
-            //Pessoa.id = resp.id;
-            //Pessoa.nome = resp.nome;
-            //Pessoa.tipo = resp.tipo;
-            //Pessoa.matricula = resp.matricula;
-            //Pessoa.escola = resp.escola;
-            //Pessoa.email = resp.email;
             //return resp.json();
         })
         .then(json => {

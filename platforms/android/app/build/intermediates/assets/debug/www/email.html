@@ -17,22 +17,24 @@
             <h1> Login </h1>
 
             <div id="aliamento" class="container py-4 form">
-                <div>
-                    <label for="email">E-mail: </label>
-                    <input name="email" type="email" class="escrever" id="email" onblur="checarEmail();" required="required">
-                    <datalist>
-                    </datalist>
-                </div>
-                <br>
-
-                <div>
+                <form class="form">
                     <div>
-                        <center>
-                            <br>
-                            <button id="entra" onclick="emailData()">Jogar</button>
-                        </center>
+                        <label for="email">E-mail: </label>
+                        <input name="email" type="email" class="escrever" id="email" onblur="checarEmail();" required="required">
+                        <datalist>
+                    </datalist>
                     </div>
-                </div>
+                    <br>
+
+                    <div>
+                        <div>
+                            <center>
+                                <br>
+                                <button id="entra" onclick="emailData()">Jogar</button>
+                            </center>
+                        </div>
+                    </div>
+                </form>
             </div>
         </fieldset>
     </center>

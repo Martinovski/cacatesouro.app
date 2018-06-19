@@ -1,6 +1,7 @@
 //validação do email html
 function verifica() {
-    if (document.querySelector('#email').value.length == 0) {
+    if ( //document.querySelector('#email').value.length == 0) {
+        document.forms[0].email.value.length == 0) {
         alert('Por favor, informe o seu EMAIL.');
         document.frmEnvia.email.focus();
         return false;
@@ -9,9 +10,10 @@ function verifica() {
 }
 //validação do email html
 function checarEmail() {
-    if (document.querySelector('#email').value == "" ||
-        document.querySelector('#email').value.indexOf('@') == -1 ||
-        document.querySelector('#email').value.indexOf('.') == -1) {
+    if ( //document.querySelector('#email').value == "" ||      document.querySelector('#email').value.indexOf('@') == -1 ||        document.querySelector('#email').value.indexOf('.') == -1) {
+        document.forms[0].email.value == "" ||
+        document.forms[0].email.value.indexOf('@') == -1 ||
+        document.forms[0].email.value.indexOf('.') == -1) {
         alert("Por favor, informe um E-MAIL válido!");
         return false;
     }
@@ -33,8 +35,8 @@ function emailData() {
     alert(init);
     fetch(url, init)
         .then(resp => {
-            return resp.json();
             alert(init);
+            return resp.json();
             //return resp.json();
         })
         .then(json => {
@@ -49,7 +51,6 @@ function emailData() {
             //document.querySelector(".response").classList.remove("text-success");
             //document.querySelector(".response").classList.add("text-danger");
             //document.querySelector(".response").innerText = err.message;
-            alert(init);
             alert('cadastro');
             window.open('cadastro.html')
                 //console.log;
